@@ -1,0 +1,18 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <RootNamespace>Runtime</RootNamespace>
+    <PackageId>RuntimeCore</PackageId>
+    <Version>1.0.1</Version>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Newtonsoft.Json" Version="12.0.3" />
+  </ItemGroup>
+
+	<Target Name="PostPackNugetDeploy" AfterTargets="Pack" Condition="'$(Configuration)' == 'Release'">
+		<Exec Command="d:\Tools\Nuget\NuGet.exe push &quot;bin\release\$(PackageId).$(PackageVersion).nupkg&quot; -source &quot;https://www.nuget.org/api/v2/package&quot; -apikey oy2mbtdzju5glms5jbaaatccrwe5ap4evovpjxsllkomfu" />
+	</Target>
+	
+</Project>
