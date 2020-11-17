@@ -7,7 +7,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Runtime.Core", "Runtime.Cor
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Runtime.Data", "Runtime.Data\Runtime.Data.csproj", "{DFD8E9F0-82B0-4130-BCD2-13F34DC3AA1B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Runtime.Net", "Runtime.Net\Runtime.Net.csproj", "{09BBB991-5E1A-4B39-9D04-EA52C7704762}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Runtime.Net", "Runtime.Net\Runtime.Net.csproj", "{09BBB991-5E1A-4B39-9D04-EA52C7704762}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Runtime.IO", "Runtime.IO\Runtime.IO.csproj", "{0232BF93-7B2C-4777-A9F9-C990B74752EE}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -27,6 +29,10 @@ Global
 		{09BBB991-5E1A-4B39-9D04-EA52C7704762}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{09BBB991-5E1A-4B39-9D04-EA52C7704762}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{09BBB991-5E1A-4B39-9D04-EA52C7704762}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0232BF93-7B2C-4777-A9F9-C990B74752EE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0232BF93-7B2C-4777-A9F9-C990B74752EE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0232BF93-7B2C-4777-A9F9-C990B74752EE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0232BF93-7B2C-4777-A9F9-C990B74752EE}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
